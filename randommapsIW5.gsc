@@ -7,6 +7,7 @@
 *	 Date : 2023/08/20 - 
 *
 */	
+
 #include maps\mp\_utility;
 #include common_scripts\utility;
 #include maps\mp\gametypes\_hud_util;
@@ -70,8 +71,8 @@ ramdommaps()
     }
 
     wait .5;
-    setDvar( "sv_maprotationcurrent", "exec " + modewin + " map " + mapwin + ";" );
-    logPrint("There are " + numPLayers + " players; " + "exec " + modewin + " map " + mapwin + "; \n");
+    setDvar( "sv_maprotationcurrent", "dsr " + modewin + " map " + mapwin + ";" );
+    logPrint("There are " + numPLayers + " players; " + "dsr " + modewin + " map " + mapwin + "; \n");
 	wait .5;
 }
 
